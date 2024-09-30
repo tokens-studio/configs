@@ -1,5 +1,11 @@
 # @tokens-studio/configs
 
+## 0.2.1
+
+### Patch Changes
+
+- 810aad9: Disable annoying TS rule and depend on react hooks plugin beta rc.
+
 ## 0.2.0
 
 ### Minor Changes
