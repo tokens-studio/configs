@@ -1,5 +1,11 @@
 # @tokens-studio/configs
 
+## 0.2.0
+
+### Minor Changes
+
+- 4179cd8: Migrate to ESLint v9 which uses flat config and makes it easier to extend/share configs.
+
 ## 0.1.1
 
 ### Patch Changes
