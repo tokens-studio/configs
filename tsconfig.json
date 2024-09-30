@@ -19,12 +19,12 @@
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitOverride": true, // These cause issues with decorators
 		"noImplicitReturns": true,
-		"noPropertyAccessFromIndexSignature": true,
 		"noUncheckedIndexedAccess": true,
 		"noUnusedLocals": false,
 		"noUnusedParameters": false,
 		"preserveWatchOutput": true,
 		"resolveJsonModule": true, // ESM doesn't yet support JSON modules.
+		"skipLibCheck": true,
 		"sourceMap": true /* Create source map files for emitted JavaScript files. */,
 		"strict": true,
 		"target": "ES2022",
