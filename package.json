@@ -15,7 +15,7 @@
 		"./typescript": "./tsconfig.json"
 	},
 	"files": [
-		".eslintrc.mjs",
+		".eslintrc.cjs",
 		".prettierignore",
 		"prettier.config.js",
 		"tsconfig.json"
