@@ -11,10 +11,21 @@ This repository contains the default Tokens Studio configs for developing in Typ
 
 ## ESLint extend
 
+We use ESLint v9 Flat config, which is the modern way to use, extend and share ESLint.
+
+> We are currently stuck with CJS config because of react and react-hooks plugins being CJS-only.
+
 ```js
-module.exports = {
-	extends: '@tokens-studio/configs/eslint',
-};
+const studioConfig = require('@tokens-studio/configs/eslint');
+
+module.exports = [
+	...studioConfig,
+	{
+		rules: {
+			// overrides here
+		},
+	},
+];
 ```
 
 ## Prettier extend
