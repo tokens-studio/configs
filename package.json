@@ -35,7 +35,7 @@
 		"@types/react": ">= 18",
 		"eslint": ">= 9",
 		"eslint-plugin-react": ">= 7",
-		"eslint-plugin-react-hooks": "rc",
+		"eslint-plugin-react-hooks": "^5.1.0-rc-3edc000d-20240926",
 		"globals": ">= 15",
 		"prettier": ">= 3",
 		"typescript-eslint": ">= 8"
