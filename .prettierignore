@@ -1,0 +1,3 @@
+# Here we put files that are auto-generated but DO get committed to git
+
+package-lock.json
