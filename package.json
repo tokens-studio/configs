@@ -1,6 +1,6 @@
 {
 	"name": "@tokens-studio/configs",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "The official configs for Tokens Studio, such as Prettier, ESLint, TSConfig etc.",
 	"license": "MIT",
 	"author": "Joren Broekema <joren.broekema@gmail.com>",
