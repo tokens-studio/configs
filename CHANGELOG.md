@@ -1,5 +1,12 @@
 # @tokens-studio/configs
 
+## 0.2.2
+
+### Patch Changes
+
+- 498990a: Fix dependencies / peerDependencies. Only ESLint / TypeScript / Prettier should be peer deps, the rest are direct dependencies of the configs.
+- 729e28b: Update to the README.md, ESLint v8 changed to -> v9, with explanation about migration to flat config. Added note about recommending to explicitly add the eslint/tsc/prettier peer dependencies.
+
 ## 0.2.1
 
 ### Patch Changes
