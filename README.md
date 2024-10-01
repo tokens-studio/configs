@@ -2,9 +2,12 @@
 
 This repository contains the default Tokens Studio configs for developing in TypeScript, whether that's Node or Browser:
 
-- ESLint config for v8 -> `@tokens-studio/configs/eslint`
+- ESLint config for v9 -> `@tokens-studio/configs/eslint`
 - Prettier config for v3 -> `@tokens-studio/configs/prettier`
 - TypeScript config for v5 -> `@tokens-studio/configs/typescript`
+
+> Important: ESLint v9 has quite a lot of breaking changes because it's using the "flat config",
+> [see migration guidelines](https://eslint.org/docs/latest/use/migrate-to-9.0.0#flat-config).
 
 > You may get a warning for ESLint's React auto detect version setting, because React may not be installed.
 > Since the React specific rules are only relevant when you are using this in a React project, don't worry about the warning if you're not.
@@ -67,3 +70,6 @@ and allows developers to standardize the tabs yet have their editors change the 
 These configs rely on various dependencies e.g. the ESLint config contains plugins / rules configurations that rely on dependencies.
 They have been configured as peerDependencies, latest NPM should install those by default if missing,
 but allow to easily use compatible local installations if you have those.
+
+It is recommended to explicitly add `eslint`, `prettier` and `typescript` as devDependencies if you use their binaries in your package,
+this is less "magic" than relying on the fact that NPM happens to install peerDependencies when they are missing.
