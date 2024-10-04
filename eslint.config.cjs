@@ -25,7 +25,18 @@ module.exports = tseslint.config(
 			'react/jsx-key': 'off',
 			'@typescript-eslint/no-explicit-any': 1,
 			'import/no-anonymous-default-export': 'off',
-			'@typescript-eslint/no-unused-vars': 1,
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{
+					args: 'all',
+					argsIgnorePattern: '^_',
+					caughtErrors: 'all',
+					caughtErrorsIgnorePattern: '^_',
+					destructuredArrayIgnorePattern: '^_',
+					varsIgnorePattern: '^_',
+					ignoreRestSiblings: true,
+				},
+			],
 			'@typescript-eslint/ban-ts-comment': [
 				2,
 				{
@@ -41,7 +52,7 @@ module.exports = tseslint.config(
 					allow: ['\\.cjs$'],
 				},
 			],
-			'sort-imports': 'error',
+			'sort-imports': 0,
 			// Should be used with known heuristics like knowing that a property is non optional in GraphQL for example
 			'@typescript-eslint/no-non-null-assertion': 'off',
 			'react/jsx-curly-spacing': ['error', 'never'],
@@ -58,7 +69,7 @@ module.exports = tseslint.config(
 		},
 	},
 	{
-		files: ['*.cjs'],
+		files: ['**/*.cjs'],
 		rules: {
 			'@typescript-eslint/no-require-imports': 0,
 		},
