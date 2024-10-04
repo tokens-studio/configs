@@ -1,5 +1,11 @@
 # @tokens-studio/configs
 
+## 0.2.3
+
+### Patch Changes
+
+- a50d54e: Fix CJS file glob, no-unused-vars to mimic how TypeScript allows it. Turn off sort-imports rule since all of the autofix plugins for this completely suck.
+
 ## 0.2.2
 
 ### Patch Changes
