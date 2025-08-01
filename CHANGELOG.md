@@ -1,5 +1,11 @@
 # @tokens-studio/configs
 
+## 0.2.4
+
+### Patch Changes
+
+- 6f8731e: Add override for CSS print width, given the CSS variable names, it makes sense to allow more columns to keep things readable and not overdo the line wrapping.
+
 ## 0.2.3
 
 ### Patch Changes
